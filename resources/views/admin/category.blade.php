@@ -50,32 +50,33 @@
         /* CSS */
 
 
-/* CSS */
-.button-59 {
-  background-color: #c2fbd7;
-  border-radius: 5px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: 0;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
- width: 600px;
-}
+        /* CSS */
+        .button-59 {
+            background-color: #c2fbd7;
+            border-radius: 5px;
+            box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+            color: green;
+            cursor: pointer;
+            display: inline-block;
+            font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+            padding: 10px 25px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 250ms;
+            border: 0;
+            font-size: 16px;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            width: 600px;
+        }
 
-.button-59:hover {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-  /* transform: scale(1.05) rotate(-1deg); */
-}
-/* end of the add_category button css */
+        .button-59:hover {
+            box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+            /* transform: scale(1.05) rotate(-1deg); */
+        }
+
+        /* end of the add_category button css */
         .input_category {
             width: 100%;
             padding: 10px;
@@ -101,6 +102,7 @@
             background-color: #0056b3;
         }
 
+        /* start the viewing category table css */
         .category_table {
             text-align: center;
             margin: auto;
@@ -265,7 +267,7 @@
                 </form>
             </div>
 
-
+            {{-- viewing the categoyr table data From the database --}}
             <table class="category_table">
                 <thead>
                     <tr>
@@ -280,7 +282,8 @@
                         <tr class="category_table_td">
                             <td>{{ $index + 1 }}</td>
                             <td>{{ $data->category_name }}</td>
-                            <td><a class="button-50" role="button" href="{{ url('edit_category', $data->id) }}">Edit</a>
+                            <td><a class="button-50" role="button"
+                                    href="{{ url('edit_category', $data->id) }}">Edit</a>
                             </td>
                             <td><a onclick="confirmation(event)" class="button-51" role="button"
                                     href="{{ url('delete_category', $data->id) }}">Delete</a></td>
@@ -288,10 +291,8 @@
                     @endforeach
                 </tbody>
             </table>
-
         </div>
     </div>
-
     <!-- JavaScript files-->
     {{-- swit alert cdn like  --}}
     <script type="text/javascript">

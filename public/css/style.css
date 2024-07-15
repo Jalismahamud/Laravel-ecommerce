@@ -230,6 +230,40 @@ a:focus {
 .user_option a span {
   margin-left: 5px;
 }
+/* style about the cart button */
+.cart-link {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+.cart-icon-wrapper {
+    position: relative;
+    display: inline-block;
+    padding:8px 12px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-count {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    background-color: yellow;
+    color: red;
+    border-radius: 50%;
+    padding:4px 9px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.cart-link:hover .cart-icon-wrapper {
+    background-color: darkred;
+}
+
 
 /*end header section*/
 .slider_section .slider_container {

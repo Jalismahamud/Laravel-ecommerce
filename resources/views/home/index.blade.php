@@ -9,24 +9,24 @@
 <body>
     <div class="hero_area">
         <!-- header section strats -->
-        @include('home.header');
+        @include('home.header')
         <!-- end header section -->
         <!-- slider section -->
 
-        @include('home.sidebar');
+        @include('home.sidebar')
         <!-- end slider section -->
     </div>
     <!-- end hero area -->
 
     <!-- shop section -->
 
-    @include('home.shop');
+    @include('home.shop')
 
     <!-- end shop section -->
 
     <!-- contact section -->
 
-    @include('home.contact');
+    @include('home.contact')
     <br><br><br>
 
     <!-- end contact section -->
@@ -35,7 +35,7 @@
 
     <!-- info section and footer section -->
 
-    @include('home.info');
+    @include('home.info')
 
     <!-- end info section -->
 
